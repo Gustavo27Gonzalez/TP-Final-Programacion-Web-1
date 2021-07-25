@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-Curse</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+      <div class="header">
+        <input
+          type="text"
+          list="cursos"
+          placeholder="Buscar curso..."
+          class="buscador"
+        />
+        <datalist id="cursos">
+          <option value="JavaScript"></option>
+          <option value="Java"></option>
+          <option value="Python"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="SQL"></option>
+          <option value="Mongodb"></option>
+          <option value="React"></option>
+          <option value="PHP"></option>
+          <option value="Kotlin"></option>
+          <option value="Angular"></option>
+          <option value="Vue"></option>
+          <option value="Nodejs"></option>
+          <option value="C#"></option>
+          <option value="C++"></option>
+          <option value="Firebase"></option>
+        </datalist>
+      </div>
+      <div class="header">
+        <div class="carrito">
+          <div class="imgcarrito">
+            <a href="inscripcion.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="contador-carrito">
+            <p class="cursos-en-carrito" id="numCarrito"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-header">
+      <ul>
+        <a href="index.html"><li>Inicio</li></a>
+        <a href="detalleCurso.html"><li>Detalle curso</li></a>
+        <a href="calendario.html"><li>Calendario</li></a>
+        <a href="giftcard.html"><li>Gift card</li></a>
+        <a href="inscripcion.html"><li>Inscripción</li></a>
+        <a href="contacto.html"><li>Contacto</li></a>
+      </ul>
+    </nav>
+    <main id="main-giftcard">
+      <br />
+      <h2>Presonalización de la Giftcard</h2>
+      <br />
+      <div class="evento_personalizado">
+        <div class="contenedor_izq">
+          <div class="contenedor-destinatario">
+            <p id="destinatario">Destinatario</p>
+          </div>
+          <section class="imagen_re" id="fondoGiftcard">
+            <div class="bloque_titulo">
+              <p id="monto-giftcard">$ 000.-</p>
+            </div>
+          </section>
+          <h3>Vista Previa de Resultado de Personalizacion<br /></h3>
+          <br />
+        </div>
+        <br />
+        <div class="contenedor_der">
+          <section class="edicion">
+            <form action="">
+              <br />
+              <label for="nombre">Nombre del Destinatario:</label>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Destinatario..."
+                id="nombre"
+                autocomplete="off"
+                onkeyup="mostrarNombre()"
+              />
+              <br />
+              <label for="color-fuente">Color de Fuente:</label>
+              <select
+                name="color-fuente"
+                id=""
+                onchange="colorFuente(this.value)"
+              >
+                <option value="grey">Gris</option>
+                <option value="red">Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="floralwhite">Blanco</option>
+                <option value="coral">Coral</option>
+                <option value="black" selected>Negro</option>
+                <option value="blueviolet">Violeta</option>
+              </select>
+              <br />
+              <label for="tamanio-fuente">Tamaño de Fuente:</label>
+              <select
+                name="tamanio-fuente"
+                id=""
+                onchange="tamanioFuente(this.value)"
+              >
+                <option value="14px">14 px</option>
+                <option value="20px">20 px</option>
+                <option value="28px">28 px</option>
+                <option value="32px">32 px</option>
+                <option value="48px">48 px</option>
+                <option value="60px">60 px</option>
+              </select>
+              <br />
+              <label for="monto">Monto: $</label>
+              <input
+                type="text"
+                name="monto"
+                placeholder="000"
+                id="monto"
+                autocomplete="off"
+                onkeyup="mostrarMonto()"
+              />
+              <br />
+              <label for="">Ubicación</label>
+              <div>
+                <div class="opciones">
+                  <img src="img/inferior-derecho.png" />
+                  <input type="radio" value="1" name="subtitulo" />
+                </div>
+                <div class="opciones">
+                  <img src="img/arriba-a-la-izquierda.png" />
+                  <input type="radio" value="2" name="subtitulo" />
+                </div>
+                <div class="opciones">
+                  <img src="img/superior-derecha.png" />
+                  <input type="radio" value="3" name="subtitulo" />
+                </div>
+              </div>
+              <br />
+              <label for="fondo">Fondo</label>
+              <select name="fondo" onchange="colorDeFondo(this.value)">
+                <option value="red">Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="grey">Gris</option>
+                <option value="coral">Coral</option>
+                <option value="black">Negro</option>
+                <option value="blueviolet" selected>Violeta</option></select
+              ><br />
+              <br />
+              <button type="submit" id="btn-confirmar-estilos-giftcard">
+                Confirmar
+              </button>
+              <br />
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="items-footer">
+        <p>González, Gustavo Antonio</p>
+        <a class="miMail" href="mailto:gustavo27gonzalez27@gmail.com"
+            ><h3>gustavo27gonzalez27@gmail.com</h3></a
+          >
+        <a
+          href="https://www.linkedin.com/in/gustavo-antonio-gonz%C3%A1lez/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i> </a
+        ><br />
+        <a href="https://github.com/Gustavo27Gonzalez" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="items-footer">
+        <nav class="nav-footer">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="detalleCurso.html">Detalle Curso</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="items-footer">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i> </a
+        ><br />
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i> </a
+        ><br />
+        <a href="mailto:gustavo27gonzalez27@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/giftcard.js"></script>
+  <script src="js/carrito.js"></script>
+  <script
+    src="https://kit.fontawesome.com/a881acabe8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

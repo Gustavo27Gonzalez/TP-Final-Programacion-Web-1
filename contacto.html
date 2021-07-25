@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-Curse</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+      <div class="header">
+        <input
+          type="text"
+          list="cursos"
+          placeholder="Buscar curso..."
+          class="buscador"
+        />
+        <datalist id="cursos">
+          <option value="JavaScript"></option>
+          <option value="Java"></option>
+          <option value="Python"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="SQL"></option>
+          <option value="Mongodb"></option>
+          <option value="React"></option>
+          <option value="PHP"></option>
+          <option value="Kotlin"></option>
+          <option value="Angular"></option>
+          <option value="Vue"></option>
+          <option value="Nodejs"></option>
+          <option value="C#"></option>
+          <option value="C++"></option>
+          <option value="Firebase"></option>
+        </datalist>
+      </div>
+      <div class="header">
+        <div class="carrito">
+          <div class="imgcarrito">
+            <a href="inscripcion.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="contador-carrito">
+            <p class="cursos-en-carrito" id="numCarrito"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-header">
+      <ul>
+        <a href="index.html"><li>Inicio</li></a>
+        <a href="detalleCurso.html"><li>Detalle curso</li></a>
+        <a href="calendario.html"><li>Calendario</li></a>
+        <a href="giftcard.html"><li>Gift card</li></a>
+        <a href="inscripcion.html"><li>Inscripción</li></a>
+        <a href="contacto.html"><li>Contacto</li></a>
+      </ul>
+    </nav>
+    <main>
+      <section class="formulario-contacto">
+        <div class="formulario-contacto-items">
+          <h2>Contacto</h2>
+          <br />
+          <form
+            action="https://formspree.io/f/xyylpjvb"
+            method="POST"
+            name="form"
+            id="form"
+          >
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre _replyto"
+              id="nombre"
+              class="form-control"
+              placeholder="Escriba su nombre..."
+            />
+            <br />
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              class="form-control"
+              placeholder="Escriba su apellido..."
+            />
+            <br />
+            <label for="telefono">Teléfono</label><br />
+            <input
+              type="tel"
+              name="telefono"
+              id="tel"
+              class="form-control"
+              placeholder="ej: 12345678 0 1234-5678"
+            /><br />
+            <br />
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="ejemplo@email.com"
+            /><br />
+            <br />
+            <label for="consulta">Consulta</label><br />
+            <textarea
+              name="consulta message"
+              id="mensaje-textarea"
+              class="form-control"
+              cols="30"
+              rows="10"
+              placeholder="Escriba su consulta..."
+              draggable="false"
+              maxlength="1000"
+            ></textarea
+            ><br />
+            <div id="contador">0/1000</div>
+            <br />
+            <button type="submit" id="btn-form-contacto">Enviar</button>
+          </form>
+        </div>
+        <div class="formulario-contacto-items mis-datos">
+          <h2>Mis Datos</h2>
+          <br />
+          <h3>González, Gustavo Antonio</h3>
+          <br /><br /><br />
+          <h3>Estudiante de la Tecnicatura en Desarrollo Web en la UNLaM</h3>
+          <br /><br /><br />
+          <a href="mailto:gustavo27gonzalez27@gmail.com"
+            ><h3>gustavo27gonzalez27@gmail.com</h3></a
+          ><br /><br /><br />
+          <a
+            href="https://www.linkedin.com/in/gustavo-antonio-gonz%C3%A1lez/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i> </a
+          ><br /><br /><br /><br />
+          <a href="https://github.com/Gustavo27Gonzalez" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <div id="mensaje" class="error"></div>
+      <h2>Ubicación</h2>
+      <section class="ubicacion">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52502.81033921128!2d-58.65170343736004!3d-34.66920534314865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc76f57e3be01%3A0xa488fcdcec5b600f!2sMor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1625000131806!5m2!1ses!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <div class="items-footer">
+        <p>González, Gustavo Antonio</p>
+        <a class="miMail" href="mailto:gustavo27gonzalez27@gmail.com"
+            ><h3>gustavo27gonzalez27@gmail.com</h3></a
+          >
+        <a
+          href="https://www.linkedin.com/in/gustavo-antonio-gonz%C3%A1lez/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i> </a
+        ><br />
+        <a href="https://github.com/Gustavo27Gonzalez" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="items-footer">
+        <nav class="nav-footer">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="detalleCurso.html">Detalle Curso</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="items-footer">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i> </a
+        ><br />
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i> </a
+        ><br />
+        <a href="mailto:gustavo27gonzalez27@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/validacion-contacto.js"></script>
+  <script src="js/carrito.js"></script>
+  <script
+    src="https://kit.fontawesome.com/a881acabe8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

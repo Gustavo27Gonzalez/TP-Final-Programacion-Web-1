@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-Curse</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html"><i class="fas fa-graduation-cap"></i></a></div>
+      <div class="header">
+        <input type="text" list="cursos" placeholder="Buscar curso..." class="buscador" />   
+        <datalist id="cursos">
+          <option value="JavaScript"></option>
+          <option value="Java"></option>
+          <option value="Python"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="SQL"></option>
+          <option value="Mongodb"></option>
+          <option value="React"></option>
+          <option value="PHP"></option>
+          <option value="Kotlin"></option>
+          <option value="Angular"></option>
+          <option value="Vue"></option>
+          <option value="Nodejs"></option>
+          <option value="C#"></option>
+          <option value="C++"></option>
+          <option value="Firebase"></option>
+        </datalist>
+      </div>
+      <div class="header">
+        <div class="carrito">
+          <div class="imgcarrito">
+            <a href="inscripcion.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="contador-carrito">
+            <p class="cursos-en-carrito" id="numCarrito"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-header">
+      <ul>
+        <a href="index.html"><li>Inicio</li></a>
+        <a href="detalleCurso.html"><li>Detalle curso</li></a>
+        <a href="calendario.html"><li>Calendario</li></a>
+        <a href="giftcard.html"><li>Gift card</li></a>
+        <a href="inscripcion.html"><li>Inscripción</li></a>
+        <a href="contacto.html"><li>Contacto</li></a>
+      </ul>
+    </nav>
+    <main>
+      <h1>U-Curse</h1>
+        <div class="contenedor-slider">
+          <div class="slider" id="slider">
+              <div class="slider--section">
+                  <img src="img/curso-react-nuevoTamaño.png" alt="" class="slider--img">
+              </div>
+              <div class="slider--section">
+                  <img src="img/curso-angular-nuevoTamaño.png" alt="" class="slider--img">
+              </div>
+              <div class="slider--section">
+                  <img src="img/curso-vue.jpg" alt="" class="slider--img">
+              </div>
+              <div class="slider--section">
+                  <img src="img/curso-ionic-nuevoTamaño.png" alt="" class="slider--img">
+              </div>
+              <div class="slider--section">
+                <img src="img/curso-angular-springboot-mysql-nuevoTamaño.jpg" alt="" class="slider--img">
+              </div>
+              <div class="slider--section">
+                  <img src="img/curso-JavaScript-nuevoTamaño.jpg" alt="" class="slider--img">
+              </div>
+              <div class="slider--section">
+                  <img src="img/curso-net-framework-nuevoTamaño.png" alt="" class="slider--img">
+              </div>
+          </div>
+          <div class="slider--btn slider--btn--izq" id="btn--izq">&#60</div>
+          <div class="slider--btn slider--btn--der" id="btn--der">&#62</div>
+      </div>
+      <section class="pasos">
+        <div class="contenedor-pasos">
+          <div class="pasos-items"><img src="img/paso1.png" alt="paso1" /></div>
+          <div class="pasos-items"><img src="img/paso2.png" alt="paso2" /></div>
+          <div class="pasos-items"><img src="img/paso3.png" alt="paso3" /></div>
+        </div>
+      </section>
+      <section class="cursosDestacados">
+        <h2>Cursos destacados</h2>
+        <div class="contenedor-cursosdestacados">
+          <div class="items-cursosdestacados">
+            <img src="img/java.png" alt="curso de java" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Java de Principiante a Intermedio</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar"><button class="btnComprarCursoDestacado" onclick="agregarCursoJavaAlCarrito()">Agregar al Carrito</button></div>
+              <div class="contenedorBtnQuitar"><button class="btnComprarCursoDestacado" onclick="quitarCursoJavaDelCarrito()">Quitar del Carrito</button></div>         
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/c++.png" alt="curso de c++" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Programación en C++</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar"><button class="btnComprarCursoDestacado" onclick="agregarCursoCPlusPlusAlCarrito()">Agregar al Carrito</button></div>
+              <div class="contenedorBtnQuitar"><button class="btnComprarCursoDestacado" onclick="quitarCursoCPlusPlusDelCarrito()">Quitar del Carrito</button></div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/kotlin.png" alt="Curso de Kotlin" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Desarrollo de aplicaciones móviles con Kotlin</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar"><button class="btnComprarCursoDestacado" onclick="agregarCursoKotlinAlCarrito()">Agregar al Carrito</button></div>
+              <div class="contenedorBtnQuitar"><button class="btnComprarCursoDestacado" onclick="quitarCursoKotlinDelCarrito()">Quitar del Carrito</button></div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/python.png" alt="curso de Python" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Master en Python</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar"><button class="btnComprarCursoDestacado" onclick="agregarCursoPythonAlCarrito()">Agregar al Carrito</button></div>
+              <div class="contenedorBtnQuitar"><button class="btnComprarCursoDestacado" onclick="quitarCursoPythonDelCarrito()">Quitar del Carrito</button></div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/nodejs.png" alt="Backend con Nodejs" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Curso de Backend con Nodejs</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar"><button class="btnComprarCursoDestacado" onclick="agregarCursoNodeAlCarrito()">Agregar al Carrito</button></div>
+              <div class="contenedorBtnQuitar"><button class="btnComprarCursoDestacado" onclick="quitarCursoNodeDelCarrito()">Quitar del Carrito</button></div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img
+              src="img/cursoProgramacionWeb.png"
+              alt="programación web con php"
+            />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Curso de Programación Web</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar"><button class="btnComprarCursoDestacado" onclick="agregarCursoPWebAlCarrito()">Agregar al Carrito</button></div>
+              <div class="contenedorBtnQuitar"><button class="btnComprarCursoDestacado" onclick="quitarCursoPWebDelCarrito()">Quitar del Carrito</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mediosPago">
+        <h2>Medios de Pago</h2>
+        <div class="contenedor-medios-pago">
+          <div class="medios-pago-items">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="medios-pago-items">
+            <i class="fab fa-cc-mastercard"></i>
+          </div>
+          <div class="medios-pago-items">
+            <i class="fab fa-bitcoin"></i>
+          </div>
+          <div class="medios-pago-items">
+            <i class="fab fa-cc-visa"></i>
+          </div>
+          <div class="medios-pago-items">
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+          <div class="medios-pago-items">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button class="ponerEnCeroElContador" onclick="ponerEnCeroElContador()">Poner en cero</button>
+    <footer>
+      <div class="items-footer">
+        <p>González, Gustavo Antonio</p>
+        <a class="miMail" href="mailto:gustavo27gonzalez27@gmail.com"
+            ><h3>gustavo27gonzalez27@gmail.com</h3></a
+          >
+        <a href="https://www.linkedin.com/in/gustavo-antonio-gonz%C3%A1lez/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a><br>
+        <a href="https://github.com/Gustavo27Gonzalez" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="items-footer">
+        <nav class="nav-footer">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="detalleCurso.html">Detalle Curso</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="items-footer">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a><br>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a><br>
+        <a href="mailto:gustavo27gonzalez27@gmail.com">
+          <i class="far fa-envelope"></i>  
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/carrito.js"></script>
+  <script
+    src="https://kit.fontawesome.com/a881acabe8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

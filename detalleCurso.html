@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-Curse</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html"><i class="fas fa-graduation-cap"></i></a>
+      </div>
+      <div class="header">
+        <input
+          type="text"
+          list="cursos"
+          placeholder="Buscar curso..."
+          class="buscador"
+        />
+        <datalist id="cursos">
+          <option value="JavaScript"></option>
+          <option value="Java"></option>
+          <option value="Python"></option>
+          <option value="HTML5"></option>
+          <option value="CSS3"></option>
+          <option value="SQL"></option>
+          <option value="Mongodb"></option>
+          <option value="React"></option>
+          <option value="PHP"></option>
+          <option value="Kotlin"></option>
+          <option value="Angular"></option>
+          <option value="Vue"></option>
+          <option value="Nodejs"></option>
+          <option value="C#"></option>
+          <option value="C++"></option>
+          <option value="Firebase"></option>
+        </datalist>
+      </div>
+      <div class="header">
+        <div class="carrito">
+          <div class="imgcarrito">
+            <a href="inscripcion.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="contador-carrito">
+            <p class="cursos-en-carrito" id="numCarrito"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-header">
+      <ul>
+        <a href="index.html"><li>Inicio</li></a>
+        <a href="detalleCurso.html"><li>Detalle curso</li></a>
+        <a href="calendario.html"><li>Calendario</li></a>
+        <a href="giftcard.html"><li>Gift card</li></a>
+        <a href="inscripcion.html"><li>Inscripción</li></a>
+        <a href="contacto.html"><li>Contacto</li></a>
+      </ul>
+    </nav>
+    <main>
+      <section class="datos-del-curso">
+        <div class="contenedor-grilla-detalles-curso">
+          <div class="item-detalles-curso">
+            <img src="img/nodejs.png" alt="curso de nodejs" />
+          </div>
+          <div class="item-detalles-curso nombre-valor-descripcion-curso">
+            <h2>Curso de BackEnd con Nodejs</h2>
+            <br />
+            <h4>Valor:</h4>
+            <h4>AR$1.000,00</h4>
+            <br />
+            <h4>Tiempo de dedicación necesario:</h4>
+            <h4>60 Hs.</h4>
+            <br />
+            <h4>Descripción del curso:</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, sed blanditiis! Deserunt ullam quis ut quia? Maxime,
+              laborum velit repellat porro iusto nihil ad eius suscipit, neque
+              esse ratione perferendis. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Reiciendis mollitia architecto sapiente
+              assumenda cum voluptatem nesciunt, soluta consectetur dolores?
+              Quasi harum sit praesentium totam. Iure non quod excepturi ut
+              placeat?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui
+              cum ratione?
+            </p>
+            <br />
+            <h4>Requisitos previos:</h4>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem.</p>
+            <br />
+            <a href="inscripcion.html">
+              <button id="btn-inscribirse-curso">Inscribirse</button>
+            </a>
+          </div>
+        </div>
+        <div class="contenedor-lista-clases">
+          <h2 id="contenidosPorClase">Contenidos por clase</h2>
+          <br />
+          <div id="contenedorListadoClases">
+            <ol class="lista-clases-curso">
+              <li class="temas-clases-curso">
+                <a href="#contenidosPorClase">Introducción</a>
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-down"></i>
+                <ol>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Bienvenida</a>
+                    <i class="far fa-clock"></i>
+                    <p>2 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">¿Cómo funciona el curso?</a>
+                    <i class="far fa-clock"></i>
+                    <p>3 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Instalaciones necesarias</a>
+                    <i class="far fa-clock"></i>
+                    <p>4 min</p>
+                  </li>
+                </ol>
+              </li>
+              <li class="temas-clases-curso">
+                <a href="#contenidosPorClase">Fundamentos de Node</a>
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-down"></i>
+                <ol>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Introducción a la sección</a>
+                    <i class="far fa-clock"></i>
+                    <p>6 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Preguntas comunes sobre Node</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>6 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Blocking vs Non Blocking I/O</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>8 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Hola Mundo en Node</a>
+                    <i class="far fa-clock"></i>
+                    <p>4 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Ciclo de vida de un proceso en Node</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>12 min</p>
+                  </li>
+                </ol>
+              </li>
+              <li class="temas-clases-curso">
+                <a href="#contenidosPorClase">Bases de Node</a>
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-down"></i>
+                <ol>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Requerir paquetes - require</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>10 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Importar archivos de nuestro proyecto</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>7 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Recibir información desde línea de comando</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>6 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >package.json - init - install - unistall</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>13 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Yargs</a>
+                    <i class="far fa-clock"></i>
+                    <p>11 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Configuraciones de Yargs</a>
+                    <i class="far fa-clock"></i>
+                    <p>15 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Respaldo del proyecto en Github</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>4 min</p>
+                  </li>
+                </ol>
+              </li>
+              <li class="temas-clases-curso">
+                <a href="#contenidosPorClase"
+                  >Webserver - HTTP - ESPRESS - HBS</a
+                >
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-down"></i>
+                <ol>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Request y Response</a>
+                    <i class="far fa-clock"></i>
+                    <p>9 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Introducción a EXPRESS</a>
+                    <i class="far fa-clock"></i>
+                    <p>10 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Servir contenido estático</a>
+                    <i class="far fa-clock"></i>
+                    <p>13 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Servir un sitio web completo</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>17 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Handlebars</a>
+                    <i class="far fa-clock"></i>
+                    <p>11 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Argumentos desde el controlador</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>10 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Preparar WEBServer para subirlo a un hosting</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>21 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Heroku - Subiendo nuestra aplicación a producción</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>13 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Subir los cambios a Heroku</a>
+                    <i class="far fa-clock"></i>
+                    <p>8 min</p>
+                  </li>
+                </ol>
+              </li>
+              <li class="temas-clases-curso">
+                <a href="#contenidosPorClase">REST Server</a>
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-down"></i>
+                <ol>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Iniciando el proyecto - RESTServer</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>15 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">EXPRESS basado en clases</a>
+                    <i class="far fa-clock"></i>
+                    <p>12 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Peticiones HTTP - GET - POST - PUT - DELETE</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>16 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Usando los códigos de respuesta HTTP en EXPRESS</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>20 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">CORS - Middleware</a>
+                    <i class="far fa-clock"></i>
+                    <p>17 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Separar las rutas y el controlador de la clase</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>8 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Obtener datos de un POST</a>
+                    <i class="far fa-clock"></i>
+                    <p>8 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Parámetros de segmento y query</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>7 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Respaldo del RESTServer a github</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>4 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Subir el RESTServer a Heroku</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>8 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Desarrollo en POSTMAN</a>
+                    <i class="far fa-clock"></i>
+                    <p>22 min</p>
+                  </li>
+                </ol>
+              </li>
+              <li class="temas-clases-curso">
+                <a href="#contenidosPorClase">Autenticación de usuario - JWT</a>
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-down"></i>
+                <ol>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Introducción a los Tokens</a>
+                    <i class="far fa-clock"></i>
+                    <p>13 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Información importante sobre los JWT</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>20 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Crear ruta autenticación - Auth - Login</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>15 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Login de usuario</a>
+                    <i class="far fa-clock"></i>
+                    <p>12 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Generar un JWT</a>
+                    <i class="far fa-clock"></i>
+                    <p>10 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Cambiar visualmente _id por uid en Mongoose</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>9 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Proteger rutas por medio de Token - Middlewares</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>12 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Obtener la información del usuario autenticado</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>14 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Middleware - Verificar Rol de administrador</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>12 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Middleware - Tiene rol</a>
+                    <i class="far fa-clock"></i>
+                    <p>9 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase"
+                      >Optimizar importaciones en Node</a
+                    >
+                    <i class="far fa-clock"></i>
+                    <p>25 min</p>
+                  </li>
+                  <li>
+                    <i class="far fa-play-circle"></i>
+                    <a href="#contenidosPorClase">Desplegar en Heroku</a>
+                    <i class="far fa-clock"></i>
+                    <p>10 min</p>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <h3 class="titulo-section-docente">Docente</h3>
+      <section class="datosDocente">
+        <div class="contenedor-datos-del-docente">
+          <div class="img-docente">
+            <img src="img/img_usuario.png" alt="imagen del docente" />
+          </div>
+          <div class="datos-docente">
+            <h3>Nombre y Apellido</h3>
+            <img src="img/4-estrellas.png" alt="4 estrellas" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Molestias laudantium voluptates, a nostrum nisi maxime numquam
+              earum assumenda dolores alias nemo odio, ab accusantium quasi,
+              voluptatem adipisci at tempore omnis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, minus.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              voluptates voluptatibus pariatur dolor, earum ullam?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cursosDestacados">
+        <h2>Cursos destacados</h2>
+        <div class="contenedor-cursosdestacados">
+          <div class="items-cursosdestacados">
+            <img src="img/java.png" alt="curso de java" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Java de Principiante a Intermedio</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="agregarCursoJavaAlCarrito()"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+              <div class="contenedorBtnQuitar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="quitarCursoJavaDelCarrito()"
+                >
+                  Quitar del Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/c++.png" alt="curso de c++" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Programación en C++</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="agregarCursoCPlusPlusAlCarrito()"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+              <div class="contenedorBtnQuitar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="quitarCursoCPlusPlusDelCarrito()"
+                >
+                  Quitar del Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/kotlin.png" alt="Curso de Kotlin" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Desarrollo de aplicaciones móviles con Kotlin</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="agregarCursoKotlinAlCarrito()"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+              <div class="contenedorBtnQuitar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="quitarCursoKotlinDelCarrito()"
+                >
+                  Quitar del Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/python.png" alt="curso de Python" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Master en Python</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="agregarCursoPythonAlCarrito()"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+              <div class="contenedorBtnQuitar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="quitarCursoPythonDelCarrito()"
+                >
+                  Quitar del Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img src="img/nodejs.png" alt="Backend con Nodejs" />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Curso de Backend con Nodejs</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="agregarCursoNodeAlCarrito()"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+              <div class="contenedorBtnQuitar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="quitarCursoNodeDelCarrito()"
+                >
+                  Quitar del Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="items-cursosdestacados">
+            <img
+              src="img/cursoProgramacionWeb.png"
+              alt="programación web con php"
+            />
+            <div class="contenedor-precio">
+              <h4>$1000.-</h4>
+            </div>
+            <div class="datosCurso">
+              <div class="horasDelCurso">
+                <h3>60hs</h3>
+              </div>
+              <div class="detallesCurso">
+                <h3>Curso de Programación Web</h3>
+                <a href="#"><p>Ver Detalle</p></a>
+              </div>
+            </div>
+            <div class="btnsCursosDestacados">
+              <div class="contenedorBtnAgregar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="agregarCursoPWebAlCarrito()"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+              <div class="contenedorBtnQuitar">
+                <button
+                  class="btnComprarCursoDestacado"
+                  onclick="quitarCursoPWebDelCarrito()"
+                >
+                  Quitar del Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button class="ponerEnCeroElContador" onclick="ponerEnCeroElContador()">
+      Poner en cero
+    </button>
+    <footer>
+      <div class="items-footer">
+        <p>González, Gustavo Antonio</p>
+        <a class="miMail" href="mailto:gustavo27gonzalez27@gmail.com"
+            ><h3>gustavo27gonzalez27@gmail.com</h3></a
+          >
+        <a
+          href="https://www.linkedin.com/in/gustavo-antonio-gonz%C3%A1lez/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i> </a
+        ><br />
+        <a href="https://github.com/Gustavo27Gonzalez" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="items-footer">
+        <nav class="nav-footer">
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="detalleCurso.html">Detalle Curso</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="items-footer">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i> </a
+        ><br />
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i> </a
+        ><br />
+        <a href="mailto:gustavo27gonzalez27@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/listaClasesCurso.js"></script>
+  <script
+    src="https://kit.fontawesome.com/a881acabe8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

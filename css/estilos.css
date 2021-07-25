@@ -1,0 +1,675 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  background-color: rgb(255, 255, 255);
+}
+/* Estilos del header */
+header {
+  height: 4em;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.fa-graduation-cap {
+  font-size: calc(1.5em + 1vw);
+  padding-left: 5vw;
+  padding-top: 2px;
+}
+.fa-shopping-cart {
+  font-size: calc(1.5em + 1vw);
+  padding-left: 20vw;
+  padding-top: 2px;
+}
+.imgcarrito {
+  width: 30%;
+  float: left;
+}
+.contador-carrito {
+  width: 2em;
+  float: right;
+  display: block;
+  background: rgb(6, 141, 252);
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 20%;
+  color: bisque;
+}
+.header {
+  width: 33%;
+}
+.header input {
+  height: 2em;
+  width: 100%;
+  margin-top: 10px;
+}
+.buscador {
+  height: 2em;
+  width: 40vw;
+  margin-top: 20px;
+  border-radius: 30px;
+  background-image: url(../img/lupa.png);
+  padding: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.buscador:hover {
+  cursor: pointer;
+}
+/* Estilos Nav */
+.nav-header {
+  height: 2.2em;
+  width: 100%;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  text-align: center;
+}
+ul li {
+  display: inline-flex;
+  width: 15%;
+}
+a li {
+  font-size: calc(0.5em + 0.4vw);
+  text-decoration: none;
+  color: bisque;
+}
+li:hover {
+  cursor: pointer;
+  color: rgb(32, 32, 32);
+  font-size: calc(0.5em + 0.5vw);
+}
+.miMail{
+  text-decoration: none;
+  font-size: calc(0.4em + 0.4vw);
+  color: black;
+}
+.miMail:hover{
+  color: antiquewhite;
+}
+/* estilos slider */
+h1 {
+  padding-top: 1em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.contenedor-slider {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #fff, 0 15px 50px;
+  position: relative;
+}
+.slider {
+  display: flex;
+  height: 100%;
+  width: 700%;
+  margin-left: -100%;
+}
+.slider--section {
+  width: 100%;
+}
+.slider--img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.slider--btn {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.slider--btn:hover {
+  background: #fff;
+}
+.slider--btn--izq {
+  left: 1%;
+  padding-bottom: 7vh;
+}
+.slider--btn--der {
+  right: 1%;
+  padding-bottom: 7vh;
+}
+/* Estilos pasos*/
+.pasos {
+  padding-top: 2em;
+  height: 30%;
+}
+.contenedor-pasos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.pasos-items {
+  padding-left: 20%;
+}
+.pasos-items img {
+  width: 60%;
+}
+/* Estilos Cursos destacados */
+h2 {
+  text-align: center;
+  padding-top: 1.5em;
+  font-size: calc(0.8em + 0.7vw);
+}
+.cursosdestacados {
+  padding-top: 1.5em;
+  height: 60%;
+}
+.contenedor-cursosdestacados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+}
+.items-cursosdestacados {
+  padding: 5% 5% 5% 5%;
+  border: 1px solid black;
+  margin: 5%;
+}
+.items-cursosdestacados img {
+  height: 45%;
+  width: 90%;
+}
+.datosCurso {
+  padding-top: 5%;
+  height: 20%;
+}
+.horasDelCurso {
+  width: 30%;
+  float: left;
+}
+.detallesCurso {
+  width: 70%;
+  float: right;
+}
+.horasDelCurso h3 {
+  font-size: calc(0.6em + 0.6vw);
+}
+.detallesCurso h3 {
+  font-size: calc(0.4em + 0.6vw);
+  text-align: center;
+}
+.detallesCurso p {
+  padding-top: 0.5em;
+  font-size: calc(0.2em + 0.6vw);
+  text-align: center;
+}
+.detallesCurso a {
+  text-decoration: none;
+}
+.btnsCursosDestacados {
+  margin-top: 20%;
+}
+.contenedorBtnAgregar {
+  width: 50%;
+  float: left;
+}
+.contenedorBtnQuitar {
+  width: 50%;
+  float: right;
+}
+.btnComprarCursoDestacado {
+  height: 5em;
+  width: 9vw;
+  text-align: center;
+  border-radius: 7px;
+  background-color: rgb(79, 79, 85);
+  color: rgb(255, 255, 255);
+  font-size: calc(0.3em + 0.3vw);
+}
+button:hover {
+  background-color: rgba(87, 84, 84, 0.6);
+  cursor: pointer;
+}
+.contenedor-precio {
+  width: 4em;
+  margin-top: -1em;
+  border: 1px solid black;
+  background-color: black;
+  color: blanchedalmond;
+}
+/* Botón para poner en cero la cantidad de cursos en carrito, lo dejé porque guarda los cursos en carrito en localStorage pero despues de actualizar me guarda nuevamente el mismo curso si clickeo en añadir*/
+.ponerEnCeroElContador{
+  display: none;
+}
+/* Estilos Medios de pago */
+.contenedor-medios-pago {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.medios-pago-items {
+  text-align: center;
+}
+.medios-pago-items i {
+  font-size: calc(2em + 2vw);
+}
+.medios-pago-items .fa-angle-left:hover {
+  cursor: pointer;
+}
+.medios-pago-items .fa-angle-right:hover {
+  cursor: pointer;
+}
+/* Estilos Footer */
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+.items-footer {
+  width: 33%;
+  text-align: center;
+}
+ol {
+  list-style: none;
+}
+ol a {
+  text-decoration: none;
+  color: bisque;
+  font-size: calc(0.7em + 0.5vw);
+}
+ol a:hover {
+  cursor: pointer;
+  color: rgb(32, 32, 32);
+}
+a i {
+  font-size: 2em;
+  color: rgb(15, 14, 15);
+}
+a i:hover {
+  color: bisque;
+}
+footer p {
+  font-size: calc(0.4em + 0.8vw);
+}
+/* Página Detalles del Curso */
+/* Section datos-del-curso*/
+.contenedor-grilla-detalles-curso {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em;
+}
+.item-detalles-curso {
+  padding: 1em;
+}
+.item-detalles-curso img {
+  height: 70%;
+  width: 100%;
+  margin-top: 0%;
+}
+/* Lista clases del curso */
+.nombre-valor-descripcion-curso h2 {
+  font-size: calc(0.7em + 0.6vw);
+}
+.nombre-valor-descripcion-curso h4 {
+  font-size: calc(0.6em + 0.5vw);
+}
+.nombre-valor-descripcion-curso p{
+  font-size: calc(0.4em + 0.4vw);
+}
+.lista-clases-curso li{
+  font-size: calc(0.7em + 0.5vw);
+}
+#contenedorListadoClases{
+  margin-left: 10%;
+  width: 80%;
+}
+.lista-clases-curso{
+  width: 100%;
+  background-color: coral;
+}
+.lista-clases-curso li a{
+  padding-left: 1em;
+}
+.lista-clases-curso li ol{
+  display: none;
+}
+.lista-clases-curso li{
+  border-top: 1px solid black;
+  justify-content: space-between;
+}
+.lista-clases-curso li ol li .fa-clock{
+  float: right;
+}
+.lista-clases-curso li ol li p{
+  float: right;
+}
+.lista-clases-curso li ol li .fa-arrow-up, .fa-arrow-down{
+  float: right;
+}
+.lista-clases-curso li ol li .fa-arrow-down, .fa-arrow-up{
+  float: right;
+}
+.temas-clases-curso ol{
+  background-color: cornflowerblue;
+}
+/* Section datos del docente */
+.titulo-section-docente {
+  padding: 1em 0 1em 3em;
+}
+.datosDocente {
+  height: 15em;
+  width: 100%;
+  background-color: coral;
+}
+.contenedor-datos-del-docente {
+  width: 100%;
+}
+.img-docente {
+  width: 10%;
+  float: left;
+}
+.datos-docente {
+  width: 90%;
+  float: right;
+  padding: 1em 1em 0 1em;
+  font-size: calc(0.6em + 0.6vw);
+}
+.img-docente img {
+  width: 90%;
+  margin: 2em 1em 1em 1em;
+}
+.datos-docente img {
+  width: 10%;
+  margin-bottom: 1em;
+}
+/* estilos Calendario*/
+#main_calendario{
+  min-height: 100vh;
+}
+/* estilos Inscripción */
+/* estilos Relacionados a validaciones */
+input[type="text"],
+select {
+  width: 100%;
+  display: block;
+  padding: 0.3em;
+  box-sizing: border-box;
+}
+input[type="radio"] {
+  margin: 0 0.3em 0 1em;
+}
+input[type="submit"],
+.input[type="button"] {
+  display: block;
+  float: right;
+  padding: 0.5em;
+  margin: 1em;
+}
+input.error,
+select.error {
+  border: 1px solid crimson;
+}
+section,
+article {
+  margin: 1em 0;
+}
+#mensaje {
+  margin-top: 2em;
+}
+#mostrar {
+  padding: 0.5em;
+}
+.oculto {
+  display: none;
+}
+.condiciones {
+  margin-top: 0.5em;
+}
+.error {
+  color: crimson;
+}
+/* inscripcion, forma de la página */
+.inscripcion {
+  min-height: 80vh;
+}
+#ingresar_per > ul {
+  margin: auto;
+  padding: 10px;
+}
+.boton_redondo {
+  border-radius: 50%;
+  width: 30px;
+  background: #eac04a;
+  cursor: pointer;
+}
+.seccion_inscripcion {
+  margin-top: 20px;
+}
+#valor_total {
+  background: black;
+  color: white;
+  font-size: 1.4em;
+  padding: 4px;
+}
+form > div {
+  margin: 10px;
+}
+.celdas {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: inherit;
+  padding: 10px 10px 10px 10px;
+}
+.celdas input {
+  margin: 10px;
+}
+.btnCerrar{
+  margin-left: 2em;
+}
+/* estilos Gift Card */
+#main-giftcard {
+  min-height: 42em;
+}
+#fondoGiftcard {
+  width: 100%;
+  height: 85%;
+  background-color: blueviolet;
+  font-size: calc(0.8em + 0.8vw);
+}
+.contenedor-destinatario {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(253, 253, 252);
+  color: black;
+  text-align: center;
+  font-size: calc(1em + 1vw);
+  border: 1px solid black;
+}
+.evento_personalizado {
+  display: flex;
+}
+.contenedor_izq {
+  width: 100%;
+  float: left;
+  margin: 2%;
+  text-align: center;
+}
+.imagen_re {
+  display: flex;
+  position: relative;
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.opciones {
+  display: inline-block;
+  text-align: center;
+}
+.opciones > img {
+  width: 35px;
+}
+#btn-confirmar-estilos-giftcard,
+#btn-form-contacto, #btn-inscribirse-curso, .btnCerrar{
+  height: 2em;
+  width: 7em;
+  font-family: "Roboto", sans-serif;
+}
+#btn-confirmar-estilos-giftcard:hover,
+#btn-form-contacto:hover, #insc:hover, #btn-inscribirse-curso:hover, .btnCerrar:hover{
+  cursor: pointer;
+  background-color: rgba(4, 28, 39, 0.6);
+  color: cornsilk;
+}
+.contenedor_der {
+  width: 100%;
+}
+#main-giftcard input,
+select {
+  width: 70%;
+}
+#destinatario {
+  padding-top: 0;
+}
+/* estilos contacto */
+.formulario-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formulario-contacto-items {
+  padding-left: 5%;
+}
+.formulario-contacto-items input {
+  height: 2em;
+  width: 90%;
+}
+#email,
+#tel {
+  padding-left: 1%;
+}
+textarea {
+  resize: none;
+  width: 90%;
+}
+.formulario-contacto-items label {
+  font-size: calc(0.6em + 0.5vw);
+}
+.formulario-contacto-items h3 {
+  font-size: calc(0.5em + 0.5vw);
+  padding-top: 2em;
+}
+.formulario-contacto-items a {
+  padding-top: 2em;
+  text-decoration: none;
+  color: black;
+}
+.mis-datos {
+  text-align: center;
+}
+.mis-datos h3:hover {
+  font-size: calc(0.6em + 0.6vw);
+  color: blueviolet;
+}
+.mis-datos .fab:hover {
+  font-size: calc(2em + 2vw);
+  color: blueviolet;
+}
+a h3 {
+  text-transform: lowercase;
+}
+.formulario-contacto-items button {
+  height: 2em;
+  width: 5em;
+  font-family: "Roboto", sans-serif;
+}
+.error {
+  padding-left: 2em;
+}
+.ubicacion {
+  height: 30em;
+}
+iframe {
+  height: 90%;
+  width: 80%;
+  margin: 0 10% 5% 10%;
+}
+/* Poner MediaQueries en GiftCard, Inscripción y Contacto */
+/* Revisar Detalles del curso, poner lista de clases debajo de datos de curso*/
+/* Giftcard hasta 568 px se ve bien, en 460 rompe */
+/* Contacto rompe a partir de 420px */
+
+/* Media query de la página de Calendario */
+
+@media (max-width: 880px){
+  #calendario{
+    min-height: 70vh;
+  }
+}
+@media (max-width: 680px){
+  #calendario{
+    min-height: 50vh;
+  }
+}
+
+/* Media query e la página de inscripción*/
+@media (max-width: 810px) {
+  .celdas {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .celdas input {
+    width: 100%;
+  }
+}
+/* Media query de la página de giftcard*/
+@media (max-width: 460px) {
+  .evento_personalizado {
+    flex-wrap: wrap;
+  }
+  .contenedor_izq {
+    height: 30em;
+    width: 100%;
+  }
+  .contenedor_der {
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 1em;
+  }
+}
+/* Media query de la página de Contacto*/
+@media (max-width: 460px) {
+  .formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* https://www.udemy.com/course/node-de-cero-a-experto/ Temas para lista de clases de Detalles del curso*/
